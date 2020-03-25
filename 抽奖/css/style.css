@@ -1,0 +1,111 @@
+#box{
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid aquamarine;
+    background: rgba(246, 241, 209);
+    height: 500px;
+    position: relative;
+    overflow-x: none;
+    overflow-y: auto;
+    color: #fff;
+    
+}
+#box div{
+    width: 100px;
+    height: 50px;
+    float: left;
+    background: rgb(150, 232, 195);
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    border: 1px solid rgb(106, 163, 137);
+    border-radius: 10px;
+}
+#box div input{
+    width: 80%;
+    height: 80%;
+}
+.light{
+    box-shadow: 0 0 10px 5px rgb(106, 163, 137);
+    transform: scale(1.2);
+    color: rgb(121, 186, 156);
+}
+div#luck{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+    transition: all 1s ease-out 0s;
+    z-index: 99;
+    
+}
+div#luck h2{
+    color: rgb(106, 163, 137);
+}
+div#luck input{
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    vertical-align: bottom;
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(106, 163, 137);
+    border: 1px solid rgb(205, 255, 232);
+    padding: 10px 20px;
+    transition: all 1s linear 0s;
+    background: rgb(205, 255, 232);
+}
+div#luck input:hover{
+    border: 2px solid rgb(106, 163, 137);
+    border-radius: 20px;
+    font-weight: 700;
+    transform: scale(1.5);
+    box-shadow: 0 50px 0 0 #fff inset;
+    color: rgb(205, 255, 232);
+}
+div#mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(205, 255, 232);
+    opacity: 0.9;
+    z-index: 1;
+    transition: all 1s linear 1s;
+    transform: scale(0);
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    color:rgb(106, 163, 137);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    left: 40%;
+    margin-left: 10px;
+}   
+
+.big-button {
+    padding: 10px 20px;
+    border: 2px solid rgb(106, 163, 137);
+    border-radius: 10px;
+    background: rgb(205, 255, 232);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button:active {
+    transform: translate3d(0, 5px, 10px);
+}
